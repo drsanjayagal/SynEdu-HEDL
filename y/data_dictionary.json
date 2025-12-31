@@ -1,0 +1,279 @@
+{
+  "dataset_name": "SynEdu-HEDL: A Synthetic Higher Education Digital Learning Dataset",
+  "purpose": "To simulate realistic learner behavior, academic performance, and digital engagement patterns in higher education for privacy-preserving learning analytics and educational decision support research.",
+  "generation_date": "2025-12-31 18:59:02",
+  "dataset_scale": {
+    "students": 20000,
+    "courses": 180,
+    "faculty": 420,
+    "semesters": 6,
+    "lms_interaction_events": 120000
+  },
+  "tables": {
+    "STUDENT_PROFILE": {
+      "record_count": 20000,
+      "columns": [
+        {
+          "name": "student_id",
+          "dtype": "int32",
+          "sample_value": "1"
+        },
+        {
+          "name": "gender",
+          "dtype": "object",
+          "sample_value": "Male"
+        },
+        {
+          "name": "age",
+          "dtype": "int32",
+          "sample_value": "23"
+        },
+        {
+          "name": "admission_type",
+          "dtype": "object",
+          "sample_value": "Merit"
+        },
+        {
+          "name": "program",
+          "dtype": "object",
+          "sample_value": "B.Tech"
+        },
+        {
+          "name": "specialization",
+          "dtype": "object",
+          "sample_value": "AI"
+        },
+        {
+          "name": "socioeconomic_index",
+          "dtype": "int32",
+          "sample_value": "1"
+        },
+        {
+          "name": "first_gen_learner",
+          "dtype": "bool",
+          "sample_value": "False"
+        },
+        {
+          "name": "baseline_digital_literacy",
+          "dtype": "float64",
+          "sample_value": "0.23286163004100052"
+        },
+        {
+          "name": "enrollment_year",
+          "dtype": "int32",
+          "sample_value": "2022"
+        }
+      ]
+    },
+    "COURSE_METADATA": {
+      "record_count": 180,
+      "columns": [
+        {
+          "name": "course_id",
+          "dtype": "int64",
+          "sample_value": "1"
+        },
+        {
+          "name": "course_type",
+          "dtype": "object",
+          "sample_value": "Project"
+        },
+        {
+          "name": "credit_value",
+          "dtype": "int32",
+          "sample_value": "5"
+        },
+        {
+          "name": "delivery_mode",
+          "dtype": "object",
+          "sample_value": "Blended"
+        },
+        {
+          "name": "assessment_weightage",
+          "dtype": "object",
+          "sample_value": "{\"Internal\": 80, \"External\": 20}"
+        },
+        {
+          "name": "difficulty_level",
+          "dtype": "int64",
+          "sample_value": "4"
+        },
+        {
+          "name": "tech_dependency",
+          "dtype": "int64",
+          "sample_value": "4"
+        }
+      ]
+    },
+    "LMS_INTERACTION_LOG": {
+      "record_count": 120000,
+      "columns": [
+        {
+          "name": "event_id",
+          "dtype": "int32",
+          "sample_value": "1"
+        },
+        {
+          "name": "student_id",
+          "dtype": "int32",
+          "sample_value": "16535"
+        },
+        {
+          "name": "course_id",
+          "dtype": "int64",
+          "sample_value": "143"
+        },
+        {
+          "name": "event_type",
+          "dtype": "object",
+          "sample_value": "Download"
+        },
+        {
+          "name": "session_duration",
+          "dtype": "float64",
+          "sample_value": "19.625325422925542"
+        },
+        {
+          "name": "resource_type",
+          "dtype": "object",
+          "sample_value": "PDF"
+        },
+        {
+          "name": "timestamp",
+          "dtype": "datetime64[ns]",
+          "sample_value": "2023-10-27 13:15:00"
+        },
+        {
+          "name": "device_type",
+          "dtype": "object",
+          "sample_value": "Mobile"
+        },
+        {
+          "name": "network_quality",
+          "dtype": "int32",
+          "sample_value": "1"
+        }
+      ]
+    },
+    "ASSESSMENT_PERFORMANCE": {
+      "record_count": 300000,
+      "columns": [
+        {
+          "name": "assessment_id",
+          "dtype": "int32",
+          "sample_value": "1"
+        },
+        {
+          "name": "student_id",
+          "dtype": "int32",
+          "sample_value": "9222"
+        },
+        {
+          "name": "course_id",
+          "dtype": "int64",
+          "sample_value": "150"
+        },
+        {
+          "name": "assessment_type",
+          "dtype": "object",
+          "sample_value": "Quiz"
+        },
+        {
+          "name": "max_marks",
+          "dtype": "int32",
+          "sample_value": "20"
+        },
+        {
+          "name": "obtained_marks",
+          "dtype": "float64",
+          "sample_value": "15.59"
+        },
+        {
+          "name": "submission_mode",
+          "dtype": "object",
+          "sample_value": "Offline"
+        },
+        {
+          "name": "plagiarism_flag",
+          "dtype": "bool",
+          "sample_value": "False"
+        }
+      ]
+    },
+    "ENGAGEMENT_METRICS": {
+      "record_count": 118023,
+      "columns": [
+        {
+          "name": "student_id",
+          "dtype": "int32",
+          "sample_value": "16535"
+        },
+        {
+          "name": "course_id",
+          "dtype": "int64",
+          "sample_value": "143"
+        },
+        {
+          "name": "weekly_login_frequency",
+          "dtype": "float64",
+          "sample_value": "0.0"
+        },
+        {
+          "name": "average_session_time",
+          "dtype": "float64",
+          "sample_value": "19.63"
+        },
+        {
+          "name": "content_completion_rate",
+          "dtype": "float64",
+          "sample_value": "0.57"
+        },
+        {
+          "name": "forum_participation_score",
+          "dtype": "float64",
+          "sample_value": "0.0"
+        },
+        {
+          "name": "assessment_timeliness",
+          "dtype": "float64",
+          "sample_value": "0.46"
+        }
+      ]
+    },
+    "OUTCOME_LABELS": {
+      "record_count": 118023,
+      "columns": [
+        {
+          "name": "student_id",
+          "dtype": "int64",
+          "sample_value": "16535"
+        },
+        {
+          "name": "course_id",
+          "dtype": "int64",
+          "sample_value": "143"
+        },
+        {
+          "name": "final_grade",
+          "dtype": "object",
+          "sample_value": "F"
+        },
+        {
+          "name": "learning_gain_index",
+          "dtype": "float64",
+          "sample_value": "0.208"
+        },
+        {
+          "name": "dropout_risk",
+          "dtype": "bool",
+          "sample_value": "True"
+        },
+        {
+          "name": "course_satisfaction",
+          "dtype": "int64",
+          "sample_value": "1"
+        }
+      ]
+    }
+  }
+}
